@@ -1,4 +1,5 @@
 import 'reflect-metadata';
+
 import { injectable } from 'inversify';
 
 @injectable()

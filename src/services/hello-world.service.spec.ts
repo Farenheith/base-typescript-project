@@ -1,12 +1,15 @@
 import 'reflect-metadata';
+
+import * as chai from 'chai';
 import * as sinon from 'sinon';
 import * as sinonChai from 'sinon-chai';
-import * as chai from 'chai';
-import { method, expectCall } from 'strict-mocha-describers';
-chai.use(sinonChai);
-import { HelloWorldService } from './hello-world.service';
+
+import { expectCall, method } from 'strict-mocha-describers';
+
 import { Container } from 'inversify';
-import { expect } from 'chai';
+import { HelloWorldService } from './hello-world.service';
+
+chai.use(sinonChai);
 
 describe('HelloWorldService', () => {
 	let target: HelloWorldService;

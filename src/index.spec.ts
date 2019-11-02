@@ -1,11 +1,14 @@
 import 'reflect-metadata';
-import { HelloWorldService } from './services/hello-world.service';
-import * as sinon from 'sinon';
+
 import * as chai from 'chai';
+import * as sinon from 'sinon';
 import * as sinonChai from 'sinon-chai';
-import { expect } from 'chai';
+
+import { HelloWorldService } from './services/hello-world.service';
 import { InversifyContainer } from './ioc/inversify-config';
+import { expect } from 'chai';
 import { expectCall } from 'strict-mocha-describers';
+
 chai.use(sinonChai);
 const testedFile = './index';
 

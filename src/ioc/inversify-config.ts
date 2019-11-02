@@ -1,6 +1,7 @@
 import 'reflect-metadata';
-import { HelloWorldService } from './../services/hello-world.service';
+
 import { Container } from "inversify";
+import { HelloWorldService } from './../services/hello-world.service';
 
 export class InversifyContainer extends Container {
 	static getContainer() {

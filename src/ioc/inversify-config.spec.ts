@@ -1,12 +1,16 @@
-import { HelloWorldService } from '../services/hello-world.service';
 import 'reflect-metadata';
+
+import * as chai from 'chai';
 import * as sinon from 'sinon';
 import * as sinonChai from 'sinon-chai';
-import * as chai from 'chai';
-import { expect } from 'chai';
-import { method, expectCall } from 'strict-mocha-describers';
-chai.use(sinonChai);
+
+import { expectCall, method } from 'strict-mocha-describers';
+
+import { HelloWorldService } from '../services/hello-world.service';
 import { InversifyContainer } from './inversify-config';
+import { expect } from 'chai';
+
+chai.use(sinonChai);
 
 describe('InversifyContainer', () => {
 	afterEach(() => {
