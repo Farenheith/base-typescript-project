@@ -1,0 +1,42 @@
+{
+  "name": "base-typescript-project",
+  "version": "1.0.0",
+  "description": "Just a basic typescript project with common packages prepared, to be forked for new projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon",
+    "lint": "tslint --project .",
+    "build:dev": "tsc",
+    "build": "npm run lint & npm run build:dev",
+    "test": "mocha --require ts-node/register --recursive \"**/*.spec.ts\"",
+    "test:coverage": "npm run lint && nyc npm test",
+    "test:coverage:lcovonly": "npm run lint && nyc --reporter=lcovonly npm test"
+  },
+  "author": "Farenheith",
+  "license": "MIT",
+  "dependencies": {
+    "@types/inversify": "^2.0.33",
+    "inversify": "^5.0.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.4",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.5",
+    "@types/sinon": "^7.5.0",
+    "@types/sinon-chai": "^3.2.3",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4",
+    "nyc": "^14.1.1",
+    "sinon": "^7.5.0",
+    "sinon-chai": "^3.3.0",
+    "strict-mocha-describers": "github:farenheith/strict-mocha-describers",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  }
+}

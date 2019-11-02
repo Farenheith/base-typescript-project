@@ -1,0 +1,13 @@
+{
+    "rules": {
+        "variable-name": [true, "check-format", "allow-leading-underscore"],
+        "no-unused-expression": false,
+        "interface-name": [true, "never-prefix"],
+        "no-magic-numbers": false,
+        "class-name": true,
+        "trailing-comma": true,
+        "await-promise": true,
+        "no-return-await": true,
+        "comment-format": true
+    }
+}
