@@ -9,7 +9,7 @@
     "lint": "tslint --project .",
     "build:dev": "tsc",
     "build": "npm run lint & npm run build:dev",
-    "test": "mocha --require ts-node/register --recursive \"**/*.spec.ts\"",
+    "test": "mocha",
     "test:coverage": "npm run lint && nyc npm test",
     "test:coverage:lcovonly": "npm run lint && nyc --reporter=lcovonly npm test"
   },
@@ -34,7 +34,8 @@
     "nyc": "^14.1.1",
     "sinon": "^7.5.0",
     "sinon-chai": "^3.3.0",
-    "strict-mocha-describers": "github:farenheith/strict-mocha-describers#semver:^1.0.1",
+    "sinon-chai-calls-assertion": "github:farenheith/sinon-chai-calls-assertion",
+    "strict-mocha-describers": "github:farenheith/strict-mocha-describers#semver:^1.1.4",
     "ts-node": "^8.4.1",
     "tslint": "^5.20.0",
     "typescript": "^3.6.4"

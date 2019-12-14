@@ -8,6 +8,6 @@
         "trailing-comma": true,
         "await-promise": true,
         "no-return-await": true,
-        "comment-format": true
+        "comment-format": true,
     }
 }
